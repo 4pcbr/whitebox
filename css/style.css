@@ -12,7 +12,7 @@ body, body * {
 
 body {
   background: #313131 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAJUlEQVQYV2NkIAIwEqGGgYaK/v//b8zIyHgW2Rk0tA6bb4myDgCerAQKYwodqwAAAABJRU5ErkJggg==) repeat;
-  
+  min-width: 1000px;
   font-family: "Square Sans Cyrillic Thin", Calibri, 'Trebuchet MS', sans-serif;
 }
 
