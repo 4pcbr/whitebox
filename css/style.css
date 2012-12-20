@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'Square Sans Cyrillic Thin';
+  src: url("../fonts/SquareSansThin.eot");
+  src: url("../fonts/SquareSansThin.eot?") format("embedded-opentype"), url("../fonts/SquareSansThin.woff") format("woff"), url("fonts/SquareSansThin.ttf") format("opentype"), url("../fonts/SquareSansThin.svg") format("svg");
+  font-weight: 200;
+  font-style: normal;
+}
+
+body, body * {
+  margin: 0; padding: 0;
+}
+
+body {
+  background: #313131 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAJUlEQVQYV2NkIAIwEqGGgYaK/v//b8zIyHgW2Rk0tA6bb4myDgCerAQKYwodqwAAAABJRU5ErkJggg==) repeat;
+  
+  font-family: "Square Sans Cyrillic Thin", Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.letters {
+  whdth: 100%;
+  position: relative;
+  height: 350px;
+  background-color: #7931b7;
+  padding-top: 200px;
+  font-size: 120px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 150px;
+  -webkit-border-bottom-right-radius: 50px;
+  -moz-border-radius-bottomright: 50px;
+  border-bottom-right-radius: 50px;
+  -webkit-border-top-left-radius: 50px;
+  -moz-border-radius-topleft: 50px;
+  border-top-left-radius: 50px;
+}
+
+.letters .descr {
+  font-size: 64px;
+  color: #FFF;
+  font-weight: normal;
+}
+
+.letters span.dark {
+  color: lightgrey;
+  text-shadow: none;
+  -webkit-transition: all 2000ms ease-in-out;
+  -moz-transition: all 2000ms ease-in-out;
+  -o-transition: all 2000ms ease-in-out;
+  -ms-transition: all 2000ms ease-in-out;
+  transition: all 2000ms ease-in-out;
+}
+
+.letters span.light {
+  color: lightgrey;
+  color: #FFF;
+  text-shadow: #FFF 0 0 70px;
+  -webkit-transition: all 2000ms ease-in-out;
+  -moz-transition: all 2000ms ease-in-out;
+  -o-transition: all 2000ms ease-in-out;
+  -ms-transition: all 2000ms ease-in-out;
+  transition: all 2000ms ease-in-out;
+}
+
+.left-bottom-corner {
+  width: 50px;
+  height: 50px;
+  background: #7931b7;
+}
+
+.left-bottom-corner div {
+  width: 50px;
+  height: 50px;
+  -webkit-border-top-left-radius: 50px;
+  -moz-border-radius-topleft: 50px;
+  border-top-left-radius: 50px;
+  background: #313131 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAJUlEQVQYV2NkIAIwEqGGgYaK/v//b8zIyHgW2Rk0tA6bb4myDgCerAQKYwodqwAAAABJRU5ErkJggg==) repeat;
+}
+
+.footer {
+  width: 100%;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.footer a {
+  color: #FFF;
+  font-size: 36px;
+  text-decoration: none;
+}
