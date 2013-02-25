@@ -35,9 +35,16 @@ body {
 }
 
 .white_font {
-  font-size: 64px;
   color: #FFF;
   font-weight: normal;
+}
+
+.descr {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 48px;
 }
 
 .letters span.dark {
@@ -82,12 +89,8 @@ body {
   width: 100%;
   padding-top: 50px;
   text-align: center;
-}
-
-.footer a {
   color: #FFF;
   font-size: 36px;
-  text-decoration: none;
 }
 
 .links {
@@ -100,15 +103,13 @@ body {
 }
 
 ul.links {
-  /*width: 100%;*/
-  /*float: left;*/
   text-align: center;
 }
 
 ul.links li {
   list-style-type: none;
   padding: 0;
-  margin: 10px 0 0 100px;
+  margin: 10px 0 0 150px;
   float: left;
 }
 
@@ -134,4 +135,26 @@ ul.links li {
 
 .clear_both {
   clear: both;
+}
+
+.content {
+  margin: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(220, 220, 220, .3);
+}
+
+.content-box {
+  padding-top: 15px;
+  border-top: 1px dotted #FFF;
+  font-size: 24px;
+}
+
+.content-box ul {
+  width: 30%;
+  float: left;
+}
+
+.content-box ul li {
+  list-style-type: none;
 }
