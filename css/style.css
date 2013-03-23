@@ -71,12 +71,18 @@ h2 {
   transition: all 2000ms ease-in-out;
 }
 
-.left-bottom-corner {
+.left-bottom-corner, .right-bottom-corner {
   width: 50px;
   height: 50px;
   background: #7931b7;
   display: inline-block;
   float: left;
+}
+
+.right-bottom-corner {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .left-bottom-corner .corner {
@@ -88,7 +94,17 @@ h2 {
   background: #313131 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAJUlEQVQYV2NkIAIwEqGGgYaK/v//b8zIyHgW2Rk0tA6bb4myDgCerAQKYwodqwAAAABJRU5ErkJggg==) repeat;
 }
 
+.right-bottom-corner .corner {
+  width: 50px;
+  height: 50px;
+  -webkit-border-bottom-right-radius: 50px;
+  -moz-border-radius-bottomright: 50px;
+  border-bottom-right-radius: 50px;
+  background: #313131 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAJUlEQVQYV2NkIAIwEqGGgYaK/v//b8zIyHgW2Rk0tA6bb4myDgCerAQKYwodqwAAAABJRU5ErkJggg==) repeat;
+}
+
 .footer {
+  position: relative;
   width: 100%;
   padding-top: 50px;
   text-align: center;
