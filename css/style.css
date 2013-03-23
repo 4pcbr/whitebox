@@ -12,7 +12,7 @@ body, body * {
 
 body {
   background: #313131 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAJUlEQVQYV2NkIAIwEqGGgYaK/v//b8zIyHgW2Rk0tA6bb4myDgCerAQKYwodqwAAAABJRU5ErkJggg==) repeat;
-  min-width: 1000px;
+  min-width: 1080px;
   font-family: "Square Sans Cyrillic Thin", Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -32,6 +32,9 @@ body {
   -webkit-border-top-left-radius: 50px;
   -moz-border-radius-topleft: 50px;
   border-top-left-radius: 50px;
+  background-image: url(/img/box.svg);
+  background-position: center 50px;
+  background-repeat: no-repeat;
 }
 
 .white_font {
@@ -109,7 +112,7 @@ ul.links {
 ul.links li {
   list-style-type: none;
   padding: 0;
-  margin: 10px 0 0 150px;
+  margin: 10px 0 0 70px;
   float: left;
 }
 
@@ -144,6 +147,10 @@ ul.links li {
   background-color: rgba(220, 220, 220, .3);
 }
 
+.content.first {
+  margin-top: 10px;
+}
+
 .content-box {
   padding-top: 15px;
   border-top: 1px dotted #FFF;
@@ -157,4 +164,8 @@ ul.links li {
 
 .content-box ul li {
   list-style-type: none;
+}
+
+.content p.first {
+  margin-bottom: 20px;
 }
