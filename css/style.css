@@ -16,6 +16,11 @@ body {
   font-family: "Square Sans Cyrillic Thin", Calibri, 'Trebuchet MS', sans-serif;
 }
 
+body.white {
+  background-color: #FFF;
+  color: #313131;
+}
+
 .letters {
   whdth: 100%;
   position: relative;
@@ -35,6 +40,15 @@ body {
   background-image: url(/img/box.svg);
   background-position: center 50px;
   background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.white .letters {
+  height: 120px;
+  background-image: url(/img/box_wired.svg);
+  background-color: #FFF;
+  border-bottom: 2px solid #7931b7;
+  border-top: 2px solid #7931b7;
 }
 
 .white_font {
@@ -44,6 +58,21 @@ body {
 
 .descr {
   font-size: 64px;
+  width: 100%;
+  top: 370px;
+  position: absolute;
+}
+
+.descr.hidden {
+  top: 550px;
+}
+
+.descr, .descr.hidden, .bow {
+  -webkit-transition: top 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-transition: top 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -o-transition: top 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -ms-transition: top 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: top 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 h2 {
@@ -53,22 +82,24 @@ h2 {
 .letters span.dark {
   color: lightgrey;
   text-shadow: none;
-  -webkit-transition: all 2000ms ease-in-out;
-  -moz-transition: all 2000ms ease-in-out;
-  -o-transition: all 2000ms ease-in-out;
-  -ms-transition: all 2000ms ease-in-out;
-  transition: all 2000ms ease-in-out;
 }
 
 .letters span.light {
   color: lightgrey;
   color: #FFF;
   text-shadow: #FFF 0 0 70px;
-  -webkit-transition: all 2000ms ease-in-out;
-  -moz-transition: all 2000ms ease-in-out;
-  -o-transition: all 2000ms ease-in-out;
-  -ms-transition: all 2000ms ease-in-out;
-  transition: all 2000ms ease-in-out;
+}
+
+.letters.hidden span.light {
+  text-shadow: none;
+}
+
+.letters span.light, .letters.hidden span.light {
+  -webkit-transition: text-shadow 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-transition: text-shadow 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -o-transition: text-shadow 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -ms-transition: text-shadow 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: text-shadow 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .left-bottom-corner, .right-bottom-corner {
@@ -101,6 +132,10 @@ h2 {
   -moz-border-radius-bottomright: 50px;
   border-bottom-right-radius: 50px;
   background: #313131 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAJUlEQVQYV2NkIAIwEqGGgYaK/v//b8zIyHgW2Rk0tA6bb4myDgCerAQKYwodqwAAAABJRU5ErkJggg==) repeat;
+}
+
+.white .left-bottom-corner .corner, .white .right-bottom-corner .corner {
+  background-image: none;
 }
 
 .footer {
@@ -136,20 +171,20 @@ ul.links li {
   color: #FFF;
   text-decoration: none;
   text-shadow: none;
-  -webkit-transition: all 200ms ease-in-out;
-  -moz-transition: all 200ms ease-in-out;
-  -o-transition: all 200ms ease-in-out;
-  -ms-transition: all 200ms ease-in-out;
-  transition: all 2000ms ease-in-out;
+  -webkit-transition: text-shadow 200ms ease-in-out;
+  -moz-transition: text-shadow 200ms ease-in-out;
+  -o-transition: text-shadow 200ms ease-in-out;
+  -ms-transition: text-shadow 200ms ease-in-out;
+  transition: text-shadow 200ms ease-in-out;
 }
 
 .fadeable a:hover {
   text-shadow: #FFF 0 0 20px;
-  -webkit-transition: all 200ms ease-in-out;
-  -moz-transition: all 200ms ease-in-out;
-  -o-transition: all 200ms ease-in-out;
-  -ms-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
+  -webkit-transition: text-shadow 200ms ease-in-out;
+  -moz-transition: text-shadow 200ms ease-in-out;
+  -o-transition: text-shadow 200ms ease-in-out;
+  -ms-transition: text-shadow 200ms ease-in-out;
+  transition: text-shadow 200ms ease-in-out;
 }
 
 .clear_both {
@@ -203,6 +238,41 @@ ul.links li {
   border-left: 1px dotted #FFF;
 }
 
-.callme .orange {
+.orange {
   color: orange;
+}
+
+.white {
+  background: #FFF;
+}
+
+.bow {
+  color: #FFF;
+  position: absolute;
+  top: 300px;
+  font-size: 36px;
+  width: 100%;
+  height: 120px;
+  display: block;
+  background-image: url(/img/bow-outline.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bow.left {
+  -webkit-transform: rotateZ(-7deg);
+  transform: rotateZ(-7deg);
+}
+
+.bow.right {
+  -webkit-transform: rotateZ(7deg);
+  transform: rotateZ(7deg);
+}
+
+.bow, .bow.left, .bow.right {
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  -moz-transition: -webkit-transform 500ms ease-in-out;
+  -o-transition: -webkit-transform 500ms ease-in-out;
+  -ms-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
 }
