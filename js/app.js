@@ -11,25 +11,8 @@
     }
   }
 
-  var fixBowTie = function() {
-    var bowTie = document.getElementById('bow');
-    var leftClass = 'left';
-    var rightClass = 'right';
-    var timing = 500;
-    var classList = bowTie.classList;
-    classList.add(leftClass);
-    window.setTimeout(function() {
-      classList.remove(leftClass);
-      classList.add(rightClass);
-      window.setTimeout(function() {
-        classList.remove(rightClass);
-      }, timing);
-    }, timing);
-  }
-
   W.addEventListener('DOMContentLoaded', function() {
     window.setTimeout(showHiddenElements, 500);
-    window.setTimeout(fixBowTie, 1500);
   }, false);
 
 })(window);
