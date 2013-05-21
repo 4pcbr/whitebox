@@ -1,149 +1,208 @@
-<!DOCTYPE html>
+<!doctype html>
+<html>
 <head>
-  <meta http-equiv='Content-type' content='text/html; charset=utf-8'>
-  <title>Whitebox.io: CallMe app.</title>
-  <link rel='stylesheet' href='css/style.css' type='text/css' media='screen' title='' charset='utf-8'>
-  <meta content='complicated software, development, programming, ruby, java, javascript, p2p, video, design, web sites' name='keywords' />
-  <meta content='Whitebox.io is a smart software company. Software development, consulting, reviewing' name='description' />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    background-color: white;
+    margin: 10px 13px 10px 13px;
+    background-image: url(/img/bg.jpg);
+    background-size:  100% auto;
+}
+table {
+	margin: 10px 0 15px 0;
+	border-collapse: collapse;
+}
+td,th {	
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+}
+th {
+	padding: 5px 10px;	
+}
+
+a {
+    color: #00a86b;
+}
+a:hover {
+    color: #00a86b;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:10px auto;
+    }
+}
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+		color: black;
+	}
+	table, pre {
+		page-break-inside: avoid;
+	}
+}
+img {
+    max-width: 420px;
+}
+.orange {
+    color: orange;
+}
+</style>
+<title>CallMe</title>
+
 </head>
-<body class='white'>
-  <div id='page'>
-    
-    <div id='letters' class='letters'>
-      <div class='descr'>
-        Call<span class='orange'>Me</span>
-      </div>
-      
-    </div>
+<body>
+<h1>Call<span class="orange">Me</span></h1>
 
-    <div class='links-holder'>
-      <div class='left-bottom-corner white_font'>
-        <div class="corner"></div>
-      </div>
-      <ul class="links fadeable">
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#technologies">Technologies</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contacts">Contacts</a></li>
-      </ul>
-      <div class="clear_both"></div>
-    </div>
-    
-    <div id="about" class="white_font content first">
-      <h2>• About us</h2>
-      <div class="content-box fadeable">
-        <p class="first">
-          We are very young software company consisting of geeky enthusiasts with reasonable software development and architecture experience at background.
-        </p>
-        <p>
-          We best found ourselves in development complicated software solutions primarily based on client-server architecture but not only. We are strongly experienced in development of web applications, mobile solutions, asynchronous serverside solutions and highloaded services.
-        </p>
-      </div>
-    </div>
+<h4>Видеоконференции в браузере</h4>
 
-    <div id="services" class="white_font content">
-      <h2>• Services</h2>
-      <div class="content-box fadeable">
-        <ul>
-          <li>Software architecture</li>
-          <li>Software development</li>
-          <li>Database design</li>
-          <li>Web development</li>
-        </ul>
-        <ul>
-          <li>Mobile development</li>
-          <li>Web design</li>
-          <li>Graphical design</li>
-        </ul>
-        <ul>
-          <li>Consulting</li>
-          <li>Coaching</li>
-        </ul>
-        <div class="clear_both"></div>
-      </div>
-    </div>
+<h2>Интро</h2>
 
-    <div id="technologies" class="white_font content">
-      <h2>• Technologies</h2>
-      <div class="content-box fadeable">
-        <ul>
-          <li>Ruby, Ruby on Rails</li>
-          <li>Sinatra, Eventmachine</li>
-          <li>Objective C, Cocoa touch</li>
-          <li>Erlang</li>
-        </ul>
-        <ul>
-          <li>HTML5, CSS3</li>
-          <li>Java, Processing</li>
-          <li>WebRTC</li>
-          <li>Ember.js</li>
-        </ul>
-        <ul>
-          <li>Javascript, SVG</li>
-        </ul>
-        <div class="clear_both"></div>
-      </div>
-    </div>
+<p>Call<span class="orange">Me</span> разрабатывался как удобный и гибкий инструмент для организации внутренних видеоконференций по заказу <a href="http://www.nvg.ru/">компании Nvision Group</a>. Прежде всего, система решает задачу модульной интеграции функционала видеоконференцсвязи в существующие и разрабатываемые проекты компании(преимущественно, заказы Ростелеком). Система работает без дополнительного ПО на клиентских машинах: только браузер.</p>
 
-    <div id="projects" class="white_font content">
-      <h2>• Projects</h2>
-      <div class="content-box fadeable projects">
-        <div class='date'>01.2013–04.2013</div>
-        <div class='callme'>
-          <p>
-            <span>Call</span><span class='orange'>Me</span>
-          </p>
-          <p>
-            p<span class='orange'>2</span>p video conferences system.
-          </p>
-          <p>
-            Distributed video conferences system which could work even in closed private networks.
-          </p>
-          <p>
-            Control server is based on Erlang. It's so lightweight and faultless than it might be run even on pocket ARM-based computers like Raspberry Pi.
-          </p>
-        </div>
-      </div>
-    </div>
+<h2>Принцип работы</h2>
 
-    <div id="contacts" class="white_font content">
-      <h2>• Contacts</h2>
-      <div class="content-box fadeable">
-        <a class='mail' href='mailto:info@whitebox.io'>✉ info@whitebox.io</a>
-      </div>
-    </div>
+<p>Система распределенная, пиринговая. Центральным узлом является сигналинг-сервер, предназначенный для передачи сообщений между клиентами и отправки управляющих команд. Видеопакеты через сервер не проходят, что позволяет минимизировать стоимость серверного оборудования. Система успешно работает на Raspberry PI. Серверна часть реализована на Erlang — платформа, ставшая стандартом надежности и отказоустойчивости в телекоммуникационных системах.</p>
 
-    <div id='footer' class='footer fadeable'>
-      © Whitebox.io, 2013
-      <div class='right-bottom-corner'>
-        <div class="corner"></div>
-      </div>
-    </div>
-    
-    <script type="text/javascript">
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-            try {
-                w.yaCounter18948889 = new Ya.Metrika({id:18948889,
-                        clickmap:true,
-                        trackLinks:true,
-                        accurateTrackBounce:true});
-            } catch(e) { }
-        });
+<h2>Интеграция</h2>
 
-        var n = d.getElementsByTagName("script")[0],
-            s = d.createElement("script"),
-            f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+<p>Система подразумевает интеграцию с сервером авторизации целевого продукта. При этом никаких ограничений на технологии авторизации нет — они настраиваются индивидуально под проект и под технологии, используемые в этом проекте.</p>
 
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
-    })(document, window, "yandex_metrika_callbacks");
-    </script>
-    <noscript><div><img src="//mc.yandex.ru/watch/18948889" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-  </div>
+<p>Пользователь открывает страницу браузера с модулем Call<span class="orange">Me</span>, после чего управляющий сервер выполняет авторизацию и запрашивает публичные мета-данные о пользователях, например: имя, должность, департамент, фото и т.д. В минимальной имплементации требуется только имя пользователя для его идентификации в контакт-листе другими пользователями.</p>
+
+<h2>Как это выглядит</h2>
+
+<p>Режим разговора между 2, 3 и 4 участниками соответственно:</p>
+
+<p><img src="http://i.4pcbr.com/i/4f/1uEGTk.png" alt="image" />
+<img src="http://i.4pcbr.com/i/a9/1uEGY1.png" alt="image" />
+<img src="http://i.4pcbr.com/i/94/1uEH0c.png" alt="image" /></p>
+
+<p>Резиновый лейаут:</p>
+
+<p><img src="http://i.4pcbr.com/i/67/1uEH0U.png" alt="image" />
+<img src="http://i.4pcbr.com/i/60/1uEH1j.png" alt="image" /></p>
+
+<p>Логаут остальных участников:</p>
+
+<p><img src="http://i.4pcbr.com/i/d6/1uEH2u.png" alt="image" /></p>
+
+<h3>Технологические ограничения</h3>
+
+<p>Клиентская часть работает на WebRTC — p2p технологии, которая до сих пор находится в стадии активной разработки. В настоящий момент поддерживаются Chrome 21+, Firefox 12+, IE(6+). Для полноценной работы в IE требуется установить дополнительный модуль IE Chrome Frame — продукт компании Google для реализации функционала Chrome. При этом для пользователей визуально нет различий между IE6 и IE6 + Chrome Frame. Пакет очень прост в установке, и подгружается лишь при наличии управлящего мета-тега в коде разметки веб-страницы.</p>
+
+<p>Что касается максимального количества участников, оно ограничено пропускной способностью сети клиентов. При этом канал адаптивный — между клиентами с плохой сетью будет передаваться видео более плохого качества, в то же врем между клиентами с широким каналом — хорошего качества.</p>
+
+<h3>Контакты</h3>
+<div style="margin-bottom: 150px;">
+    <p>Олег Сидоров</p>
+    <p><a href="mailto:me@whitebox.io">me@whitebox.io</a></p>
+    <p>+7 916 875 15 16</p>
+</div>
+
 </body>
+</html>
